@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="title">Панель настроек бота</div>
+            <div class="form__controls">
+                <label for="time">Время отправки рассылки:</label>
+                <input id="time" type="text">
+            </div>
+            <div class="form__controls">
+                <label for="text">Текст рассылки:</label>
+                <textarea name="" id="text" cols="30" rows="10"></textarea>
+            </div>
+            <button id="send">Отправить</button>
+        </div>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+    }
+    body {
+        background-color: #f2f5ff;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card {
+        background-color: #ffffff;
+        color: #43597b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        padding: 50px 50px;
+        border-radius: 20px;
+        
+    }
+    .title {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .form__controls {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .form__controls > label {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    input {
+        outline: none;
+        border: 2px solid #277ffe;
+        padding: 10px 15px;
+        margin-bottom: 2px;
+        width: 100%;
+        border-radius: 12px;
+    }
+    textarea {
+        outline: none;
+        border: 2px solid #277ffe;
+        padding: 10px 15px;
+        margin-bottom: 2px;
+        width: 100%;
+        border-radius: 12px;
+    }
+    button {
+        background-color: #277ffe;
+        border: 2px solid #277ffe;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    button:hover {
+        border-color: #277ffe;
+        color: #277ffe;
+        background-color: transparent;
+    }
+</style>
+<script type="module" src="./sender.js">
+</script>
+</html>

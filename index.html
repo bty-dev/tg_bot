@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tg bot settings</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="title">Добро пожаловать!</div>
+            <div class="subtitle">Введите свои данные для того чтобы войти в аккаунт</div>
+            <div class="form__controls">
+                <label for="login">Логин:</label>
+                <input id="login" type="text">
+            </div>
+            <div class="form__controls">
+                <label for="password">Пароль:</label>
+                <input id="password" type="password">
+            </div>
+            <button><a href="./settings.html">Войти</a></button>
+        </div>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+    }
+    body {
+        background-color: #f2f5ff;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card {
+        background-color: #ffffff;
+        color: #43597b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        padding: 50px 50px;
+        border-radius: 20px;
+        
+    }
+    .title {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    button {
+        background-color: #277ffe;
+        border: 2px solid #277ffe;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    button:hover {
+        border-color: #277ffe;
+        color: #277ffe;
+        background-color: transparent;
+    }
+    button:hover > a {
+        color: #277ffe;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .form__controls {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .form__controls > label {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    input {
+        outline: none;
+        border: 2px solid #277ffe;
+        padding: 10px 15px;
+        margin-bottom: 2px;
+        width: 100%;
+        border-radius: 12px;
+    }
+</style>
+</html>
